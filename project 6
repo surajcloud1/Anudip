@@ -1,0 +1,73 @@
+# ##### Q-1.Function without Parameters:
+
+def witht():
+    print("hello")
+
+witht()
+
+##### output====> "hello"
+
+# #####Q=>2.Function with Parameter:
+def sum(a,b):
+    sm=a+b
+    print(sm)
+
+sum(10,20)
+#### output===> 30
+
+
+#####Q==>3 Function with Default Parameter:
+
+def rk(name, greet="i am default value"):
+    return(f"{name},{greet}")
+
+print(rk("Rahil", "hey"))
+#### output ===> Rahil,hey
+
+print(rk("khan"))
+#### output===> khan,i am default value
+
+
+ #### Q===>4 Function with Return Keyword:
+def add(a, b):
+    result = a + b
+    return result
+
+sum_result = add(3, 5)
+print(sum_result)
+#####  Output: 8
+
+
+
+
+####   Recursion:
+####           a) WAP to print factorial value of a given number using recursion.
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Input from the user
+num = int(input("Enter a number: "))
+result = factorial(num)
+
+print(f"The factorial of {num} is {result}")
+
+
+
+#### ===>  b) WAP to display Fibonacci series up to 10 iteration using recursion.
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Number of iterations
+num_iterations = 10
+
+print("Fibonacci series up to 10 iterations:")
+for i in range(num_iterations):
+    print(fibonacci(i), end=" ")

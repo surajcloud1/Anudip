@@ -18,14 +18,14 @@ sum(10,20)
 
 #####Q==>3 Function with Default Parameter:
 
-def rk(name, greet="i am default value"):
+def bs(name, greet="i am default value"):
     return(f"{name},{greet}")
 
-print(rk("Rahil", "hey"))
-#### output ===> Rahil,hey
+print(bs("Bittu", "hey"))
+#### output ===> Bittu,hey
 
-print(rk("khan"))
-#### output===> khan,i am default value
+print(bs("Samui"))
+#### output===> Samui,i am default value
 
 
  #### Q===>4 Function with Return Keyword:
